@@ -1,0 +1,26 @@
+# Duc: training with nuts data
+# Train command: python train.py --data coco128.yaml
+# Default dataset location is next to /yolov5:
+#   /parent_folder
+#     /nuts
+#     /yolov5
+
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+train: ../nuts/images/train/
+val: ../nuts/images/val/
+
+# link colab
+# train: ../coco128/images/train2017/  # 128 images
+# val: ../coco128/images/train2017/  # 128 images
+
+
+# number of classes
+nc: 2
+
+# class names
+names: ['nut', 'screw']
+
+# run train
+# python train.py --data coco.yaml --cfg yolov5s.yaml --weights '' --batch-size 64
+# python train.py --data nuts.yaml --cfg yolov5s.yaml --weights '' --batch-size 16
+# python train.py --img 256 --batch 16 --epochs 3 --data nuts.yaml --weights yolov5s.pt --cfg yolov5s-nuts.yaml --nosave --cache
