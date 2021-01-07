@@ -9,8 +9,8 @@
 # val: ../nuts/images/val/
 
 # Data: for colab
-train: content/gdrive/MyDrive/colab_data/nuts/images/train/
-val: content/gdrive/MyDrive/colab_data/nuts/images/val/
+train: ../gdrive/MyDrive/colab_data/nuts/images/train/
+val: ../gdrive/MyDrive/colab_data/nuts/images/val/
 
 # number of classes
 nc: 2
