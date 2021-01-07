@@ -22,3 +22,6 @@ names: ['nut', 'screw']
 # python train.py --data coco.yaml --cfg yolov5s.yaml --weights '' --batch-size 64
 # python train.py --data nuts.yaml --weights '' --batch-size 16
 # python train.py --img 640 --batch 16 --epoch 10 --data nuts.yaml --weights yolov5s.pt --nosave --cache
+
+# run detect
+# python detect.py --weights last.pt --img 640 --conf 0.25 --source ../nuts/images/test/
