@@ -1,0 +1,23 @@
+# custom data set
+
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+#train: ../data_pipes/images/train/  # 20 images
+#val: ../data_pipes/images/val/  # 5 images
+
+# colab path
+train: ../gdrive/MyDrive/colab_data/pipes/images/train
+val: ../gdrive/MyDrive/colab_data/pipes/images/val
+
+# number of classes
+nc: 1
+
+# class names
+names: ['pipe']
+
+# run train
+# python train.py --img 640 --batch 16 --epochs 5 --data coco128.yaml --weights yolov3.pt
+# python train.py --img 256 --epochs 5 --data pipes.yaml --weights yolov3.pt
+# python train.py --img 256 --epochs 500 --data pipes.yaml --weights yolov5s.pt
+
+# run predict
+# python detect.py --source data/images --weights runs/train/exp2/weights/best.pt --conf 0.4

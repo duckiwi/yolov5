@@ -1,0 +1,21 @@
+# custom data set
+
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+train: ../nuts/images/train/  # 40 images
+val: ../nuts/images/val/  # 10 images
+test: ../nuts/images/test/  # 10 images
+
+# number of classes
+nc: 2
+
+# class names
+names: ['nuts', 'screws']
+
+# run train
+# python train.py --img 640 --batch 16 --epochs 5 --data coco128.yaml --weights yolov3.pt
+# python train.py --img 256 --batch 16 --epochs 5 --data nuts.yaml --weights yolov5s.pt
+# python train.py --img 256 --batch 16 --epochs 5 --data nuts.yaml --weights yolov5x.pt
+
+# run predict
+# python detect.py --source ../nuts/images/test --weights runs/train/exp2/weights/best.pt --conf 0.4
+# python detect.py --source ../nuts/images/test --weights yolov5s.pt --conf 0.4
