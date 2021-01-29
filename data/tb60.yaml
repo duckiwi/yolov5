@@ -17,7 +17,7 @@ names: ['tb60']
 
 # run train
 # python train.py --img 256 --batch 16 --epochs 10 --data tb60.yaml --weights yolov5s.pt
-# python train.py --img 640 --epochs 1000 --data tb60.yaml --weights yolov5l.pt
+# python train.py --img 640 --epochs 1000 --data tb60.yaml --weights yolov5s.pt
 
 # run predict
 # python detect.py --source data/images --weights tb60_best.pt --conf 0.4
