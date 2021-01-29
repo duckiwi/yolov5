@@ -1,0 +1,23 @@
+# custom data set
+# data set for bke (images from daisan)
+
+# train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
+#train: ../data_pipes/images/train/  # 20 images
+#val: ../data_pipes/images/val/  # 5 images
+
+# colab path
+train: ../gdrive/MyDrive/colab_data/pipes/images/train
+val: ../gdrive/MyDrive/colab_data/pipes/images/val
+
+# number of classes
+nc: 1
+
+# class names
+names: ['bke']
+
+# run train
+# python train.py --img 256 --batch 16 --epochs 10 --data bke.yaml --weights yolov5s.pt
+# python train.py --img 640 --epochs 1000 --data bke.yaml --weights yolov5l.pt
+
+# run predict
+# python detect.py --source data/images --weights bke_best.pt --conf 0.4
